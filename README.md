@@ -25,7 +25,7 @@ Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, and ROC-AUC Curve.
 bash
 Copy
 Edit
-git clone https://github.com/your-username/Customer-Churn-Prediction.git
+git clone https://github.com/abhijeeth12/Customer-Churn-Prediction.git
 cd Customer-Churn-Prediction
 pip install -r requirements.txt
 python churn_model.py
