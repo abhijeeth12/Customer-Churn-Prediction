@@ -1,24 +1,37 @@
-🔹 Customer Churn Prediction using ANN
+# Customer Churn Prediction using ANN  
 
-Description:
+## Description  
+This project focuses on predicting customer churn using an **Artificial Neural Network (ANN)** built with **TensorFlow/Keras**. Churn prediction is a critical task in customer retention, helping businesses identify customers likely to leave their service based on historical data.  
 
-This repository contains an Artificial Neural Network (ANN) model for predicting customer churn. 
+The dataset includes various customer attributes such as:  
+- **Demographic Information** – Geography, Gender, Age  
+- **Financial Data** – Credit Score, Balance, Estimated Salary  
+- **Account Information** – Tenure, Number of Products, Active Membership Status  
+- **Behavioral Insights** – Whether the customer has a credit card, and if they have exited  
 
-The dataset includes various customer attributes such as credit score, geography, gender, age, tenure, balance, and activity status to determine whether a customer is likely to leave the service.
+Using these features, the model learns patterns that differentiate churned customers from retained ones.  
 
+## Model Architecture  
+- **Input Layer** → 11 neurons (for 11 input features)  
+- **Hidden Layers** → Two hidden layers with **ReLU** activation  
+- **Dropout Regularization** → Applied at each hidden layer to prevent overfitting  
+- **Output Layer** → A single neuron with **sigmoid activation** for binary classification (Churn = 1, No Churn = 0)  
+- **Optimizer** → Adam optimizer for adaptive learning rate  
+- **Loss Function** → Binary Cross-Entropy for classification  
 
-The model is built using TensorFlow/Keras with multiple hidden layers, ReLU activation for hidden layers, and sigmoid activation for binary classification. 
+## Key Features & Techniques Used  
+✅ **Data Preprocessing:**  
+- Encodes categorical variables (e.g., Geography, Gender)  
+- Normalizes numerical features for better training  
 
-Techniques like Dropout regularization, early stopping, and Adam optimizer are used to enhance performance.
+✅ **ANN Model with Regularization:**  
+- Uses **Dropout layers** to prevent overfitting  
+- Implements **Early Stopping** to monitor validation loss and halt training when improvement stagnates  
 
-Features:
+✅ **Evaluation Metrics:**  
+- **Accuracy** – Measures how well the model classifies churned vs. non-churned customers  
+- **Confusion Matrix & ROC Curve** – Helps visualize classification performance  
 
-✅ Data Preprocessing: Encoding categorical data, feature scaling
-
-✅ ANN Model: Multi-layer perceptron with dropout for regularization
-
-✅ Optimization: Adam optimizer with a manually adjustable learning rate
-
-✅ Evaluation Metrics: Accuracy, loss monitoring, confusion matrix, ROC curve
-
-✅ Early Stopping: Prevents overfitting by monitoring validation loss
+✅ **Hyperparameter Tuning:**  
+- Adjustable **learning rate** for Adam optimizer  
+- Flexible **batch size** and **epochs** for model training  
