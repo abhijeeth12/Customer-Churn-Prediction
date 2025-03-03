@@ -3,7 +3,6 @@
 Description:
 
 This repository contains an Artificial Neural Network (ANN) model for predicting customer churn. The dataset includes various customer attributes such as credit score, geography, gender, age, tenure, balance, and 
-
 activity status to determine whether a customer is likely to leave the service.
 
 
