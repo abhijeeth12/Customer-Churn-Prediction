@@ -1,4 +1,5 @@
 Customer Churn Prediction Model 🚀
+
 This repository contains a machine learning model that predicts customer churn based on various demographic, financial, and activity-related factors. The dataset includes key customer details such as credit score, geography, age, account balance, and transaction behavior.
 
 📌 Features & Dataset Overview
