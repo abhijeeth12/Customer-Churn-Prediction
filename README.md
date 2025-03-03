@@ -21,14 +21,6 @@ Exited → Target variable (1 = Churned, 0 = Retained).
 Preprocessing: Data cleaning, feature scaling, and encoding categorical variables.
 Models Used: Logistic Regression, Decision Trees, Random Forest, XGBoost, and Neural Networks.
 Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, and ROC-AUC Curve.
-🔧 Installation & Usage
-bash
-Copy
-Edit
-git clone https://github.com/abhijeeth12/Customer-Churn-Prediction.git
-cd Customer-Churn-Prediction
-pip install -r requirements.txt
-python churn_model.py
 📜 Results & Insights
 Customers with higher ages and lower activity levels are more likely to churn.
 Having multiple bank products and a higher credit score reduces churn probability.
